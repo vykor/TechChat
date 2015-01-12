@@ -1,0 +1,21 @@
+<a ui-sref="newMessage" class="btn-primary btn-lg nodecoration">Add New Message</a>
+<table class="table messagetable">
+    <tr>
+        <td><h3>All Messages</h3></td>
+        <td></td>
+    </tr>
+    <tr ng-repeat="message in messages">
+        <td>{{message.id}}</td>
+        <td>{{message.message}}</td>
+<!--
+        <td>{{message.topic}}</td>
+        <td>{{message.type}}</td>
+        <td>{{message.user}}</td>
+//-->
+        <td>{{message.datetime}}</td>
+        <td>
+            <a class="btn btn-primary" ui-sref="viewMessage({id:message.id})">View</a>
+            <a class="btn btn-danger"  ng-click="deleteMessge(message)">Delete</a>
+        </td>
+    </tr>
+</table>

@@ -1,0 +1,36 @@
+<table class="table messagetable">
+    <tr>
+        <td><h3>Details for {{message[0].id}}</h3></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Message</td>
+        <td>{{message[0].message}}</td>
+    </tr>
+    <tr>
+        <td>Topic</td>
+        <td>{{message[0].topic}}</td>
+    </tr>
+    <tr>
+        <td>Type</td>
+        <td>{{message[0].type}}</td>
+    </tr>
+    <tr>
+        <td>User</td>
+        <td>{{message[0].user}}</td>
+    </tr>
+    <tr>
+        <td>Datetime</td>
+        <td>{{message[0].datetime}}</td>
+    </tr>
+</table>
+<div>
+    <a class="btn btn-primary" ui-sref="editMessage({id:message[0].id})">Edit</a>
+</div>
+<!--
+<div>
+    <pre>
+	{{message}}
+    </pre>
+</div>
+//-->
